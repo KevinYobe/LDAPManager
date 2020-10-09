@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+org.eclipse.php.composer.corebuildpath.includes.excludes=<buildpathentry including\="*/" kind\="src" path\="vendor"/>\r\n
+org.eclipse.php.composer.corecomposer_phar=
+org.eclipse.php.composer.corephp_executable=C\:\\xampp\\php\\php.exe
+org.eclipse.php.composer.coresaveaction.buildpath=True
+org.eclipse.php.composer.coresaveaction.update=True
+org.eclipse.php.composer.coreuse_project_phar=true
