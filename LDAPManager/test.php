@@ -9,20 +9,18 @@ use LDAP\LDAPConnection;
 use Config\LDAPConfig;
 use Exception\LDAPSearchException;
 use LDAP\LDAPUtils;
+use Repository\RepositoryFactory;
 new Autoload();
 //$searchUsers = new LDAPConnection();
-$cfg = new LDAPConfig();
 
 
-//$attribute = array('useraccountcontrol');
 
-$filter = 'cn=';
-$so = 'Kevin Yobe';
+$userRepository = "UserRepository";
+$repository = new RepositoryFactory();
+$user = $repository->getRepository($userRepository);
 
-$sr = new LDAPUtils($filter, $so);
-$rs = $sr->isLocked();
-
-var_dump($rs);
+var_dump($repository);
 
 
-//var_dump($entry);
+
+
