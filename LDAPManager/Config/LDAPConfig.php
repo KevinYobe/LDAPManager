@@ -11,7 +11,7 @@ class LDAPConfig
     
     public function __construct()
     {
-        $path = 'C:\xampp\htdocs\passwordmanager2\app.ini';
+        $path = 'C:\Users\KYobe\git\LDAPManager\LDAPManager\app.ini';
         self::$cfg = new Config($path);
     }
     

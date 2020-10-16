@@ -14,11 +14,20 @@ class RepositoryFactory
     }
     
     public function getRepository($repositoryName) {
-        if(class_exists($repositoryName)){
-           return new $repositoryName(); 
+        
+        $userRepository = 'UserRepository';
+        $objectRepository = 'ObjectRepository';
+        
+        if(strcasecmp($repositoryName, $userRepository) == 0){
+            return new UserRepository();
         }
+        
+        elseif (strcasecmp($repositoryName, $objectRepository)) {
+            return new ObjectRepository();
+        }
+        
         else {
-            throw new ClassNotFoundException("Class".$repositoryName."was not found");
+            throw new ClassNotFoundException("Class ".$repositoryName." was not found");
         }
     }
 }

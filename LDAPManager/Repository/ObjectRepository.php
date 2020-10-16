@@ -1,7 +1,7 @@
 <?php
 namespace Repository;
 
-abstract class ObjectRepository implements Repository
+class ObjectRepository implements Repository
 {
 
     public function __construct()
@@ -12,5 +12,14 @@ abstract class ObjectRepository implements Repository
 
     public function setObject()
     {}
+    public function getAll()
+    {}
+
+    public function getbyCN()
+    {}
+
+    public function saveObject()
+    {}
+
 }
 

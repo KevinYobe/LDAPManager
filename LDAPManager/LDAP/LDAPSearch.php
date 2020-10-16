@@ -58,12 +58,8 @@ class LDAPSearch
         
     }
     
-    
-    public function searchByAttributes($attributes){
-        
-    }
-    
-    
+   
+ 
     public  function getAttributes(){
         $first_entry = $this->getFirstEntry();
         $attributes = ldap_get_attributes(LDAPConnection::connect(), $first_entry);

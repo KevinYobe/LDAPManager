@@ -18,10 +18,10 @@ class LDAPUser
     private $filter;
     private $user;
 
-    public function __construct($user, $filter = '')
+    public function __construct($filter = '')
     {
         $this->filter = $filter;
-        $this->user = $user;
+      //  $this->user = $user;
         $this->ldap = new LDAP($this->filter, $this->user);
         
     }

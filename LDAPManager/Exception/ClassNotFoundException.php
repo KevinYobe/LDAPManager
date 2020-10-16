@@ -1,6 +1,8 @@
 <?php
 namespace Exception;
 
+use Exception;
+
 class ClassNotFoundException extends \Exception
 {
 
